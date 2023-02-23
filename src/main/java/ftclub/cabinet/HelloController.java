@@ -1,14 +1,16 @@
 package ftclub.cabinet;
 
-import lombok.Getter;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class controller {
+public class HelloController {
     @GetMapping("/hello")
-    public String getTest() {
-        return "hi";
+    public String hello() {
+        return "Hello!";
+    }
+    @GetMapping("/abc")
+    public String abc() {
+        return "abc";
     }
 }
